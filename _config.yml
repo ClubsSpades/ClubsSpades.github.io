@@ -12,10 +12,10 @@ language:
   - en
   - zh-cn
 timezone: 'Asia/Shanghai'
-# avatar: /images/clubsspades.jpg
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://localhost:4000/
+url: https://clubsspades.github.io
 permalink: :title.html
 permalink_defaults: 
 pretty_urls:
