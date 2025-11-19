@@ -1,8 +1,16 @@
+---
+cover: "云平台开发--Docker/docker-image.jpeg"
+poster: # 海报（可选，全图封面卡片）
+  headline: Docker学习记录 # 必选
+  color: black # 可选，默认为跟随主题的动态颜色 # white,red...
+date: 2025-11-19
+tags: Study
+---
 用docker启动kali
 docker exec -it  kali bash
 # Docker命令
 ### Linux命令
-改主机名：hostnamectl set-hostname CST23048
+改主机名：hostnamectl set-hostname xxx
 查看当前用户：pwd
 创建文件夹：mkdir test
 rm -r test
@@ -30,13 +38,13 @@ dd删除一行，u （ctrl+z）撤销
 ## Dockerfile
 ```
 FROM ubuntu:18.04
-MAINTAINER cst23048_xzs    
+MAINTAINER xxxx_xxx    
 ENV MYPATH /usr/local
 WORKDIR $MYPATH
 RUN apt update
 RUN apt -y install vim
 RUN apt -y install net-tools
-RUN echo "CST23048_xzs" > file.txt
+RUN echo "xxxx_xxx" > file.txt
 CMD /bin/bash
 
 FROM # 基础镜像，当前新镜像是基于哪个镜像的
@@ -99,7 +107,7 @@ docker pull localhost:5001/nginx:1.0
 # 持久化存储与数据共享
 1、 创建文件夹/home/share，将index.html文件放到文件夹/home/share。
 后台方式运行nginx镜像，将本地目录/home/share映射到容器目录/usr/share/nginx/html，
-`docker run -d --name nginx -p 8081:80 -v ~/class/docker_class_cst23048/share:/usr/share/nginx/html nginx`
+`docker run -d --name nginx -p 8081:80 -v ~/class/docker_class_x x x x/share:/usr/share/nginx/html nginx`
 测试能否在容器里面的/usr/share/nginx/html目录找到index.html。
 ![[Pasted image 20251029172853.png]]
 2、 运行两个官方最新nginx镜像，一个实现具名挂载，数据卷名字为nginx_conf，容器内路径为/usr/share/nginx/；一个匿名挂载，容器内路径为/usr/share/nginx/
@@ -108,7 +116,7 @@ docker pull localhost:5001/nginx:1.0
 **匿名挂载：**
 ![](file:////Users/spadesclubs/Library/Containers/com.kingsoft.wpsoffice.mac/Data/tmp/wps-spadesclubs/ksohtml//wps2.jpg)
 3、**后台方式运行官方最新的mysql镜像，容器名字mysql-server，端口映射33306:3306，在宿主机上创建数据卷，将目录/home/data挂载到容器目录/var/lib/mysql，密码设置用-e MYSQL_ROOT_PASSWORD=123456** 
-`docker run -d --name mysql-server -p 33306:3306 -v ~/class/docker_class_cst23048/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql`
+`docker run -d --name mysql-server -p 33306:3306 -v ~/class/docker_class_xxxx/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql`
 启动后进入到容器里面运行命令mysql -u root -p**，输入密码后登录
 ![[Pasted image 20251029173241.png]]
 
@@ -170,7 +178,7 @@ docker rm -f $(docker ps -aq)
 4. **定制tomcat镜像必要的代码**
 ```
 FROM registry.cn-hangzhou.aliyuncs.com/xujc/centos
-MAINTAINER xzs_cst23048@aaa.com
+MAINTAINER xxx_xxxx@aaa.com
 WORKDIR /usr/local 
 
 ADD jdk-8u301-linux-x64.tar.gz /usr/local/java/
