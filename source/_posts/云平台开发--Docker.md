@@ -1,8 +1,6 @@
 ---
-cover: "云平台开发--Docker/docker-image.jpeg"
-poster: # 海报（可选，全图封面卡片）
-  headline: Docker学习记录 # 必选
-  color: black # 可选，默认为跟随主题的动态颜色 # white,red...
+title: Docker学习记录
+excerpt: '持续更新ing'
 date: 2025-11-19
 tags: Study
 ---

@@ -3,8 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ClubsSpades
+title: ClubsSpades's Space
 avatar: /images/clubsspades.jpg
+favicon: /images/clubsspades.jpg
 subtitle: ''
 description: "ClubsSpades's Space"
 keywords:
@@ -13,6 +14,7 @@ language:
   - en
   - zh-cn
 timezone: 'Asia/Shanghai'
+
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
