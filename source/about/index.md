@@ -7,14 +7,13 @@ cover: /images/autumn.webp.jpg
 
 ## 🎨 我在做什么
 
-| 领域 | 状态 | 心情 |
+| 领域 | 状态 | Suki{% icon solar:chat-square-like-bold-duotone %} |
 |------|------|------|
 | **信息安全** | 📖 学习嗷 | 🌍 保护数字世界 |
 | **博客写作** | 📚 间歇更新 | 📷 加载存档点 |
 | **碎片记录** | 🌸 追番喵 | 🎮 明日方舟 |
 
 icons.yml 中的图标：{% icon solar:planet-bold-duotone %}
-{% icon solar:chat-square-like-bold-duotone %}
 外链图标：{% icon https://api.iconify.design/solar:link-circle-bold.svg %}
 指定颜色：{% icon ph:seal-question-fill color:red %}
 
