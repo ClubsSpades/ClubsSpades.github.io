@@ -58,10 +58,9 @@ COPY # 类似ADD，拷贝文件和目录到镜像中
 CMD # 指定一个容器启动时要运行的命令，dockerFile中可以有多个CMD指令，但只有最后一个生效！
 ENTRYPOINT # 指定一个容器启动时要运行的命令,形成新的命令组合
 ```
-![[Pasted image 20251015124304.png]]
-![[Pasted image 20251012182118.png]]
+![未成功加载图片](云平台开发--Docker/Pasted%20image%2020251015124304.png)
 
-## 阿里云Docker仓库。  镜像仓库阿里云密码：MWSX1314
+## 阿里云Docker仓库。
 ```
 docker login --username=aliyun9961787532 crpi-mi3d4ixpugeyb3y3.cn-hangzhou.personal.cr.aliyuncs.com
 ```
@@ -109,16 +108,16 @@ docker pull localhost:5001/nginx:1.0
 后台方式运行nginx镜像，将本地目录/home/share映射到容器目录/usr/share/nginx/html，
 `docker run -d --name nginx -p 8081:80 -v ~/class/docker_class_x x x x/share:/usr/share/nginx/html nginx`
 测试能否在容器里面的/usr/share/nginx/html目录找到index.html。
-![[Pasted image 20251029172853.png]]
+![未成功加载图片](云平台开发--Docker/Pasted%20image%2020251029172853.png)
 2、 运行两个官方最新nginx镜像，一个实现具名挂载，数据卷名字为nginx_conf，容器内路径为/usr/share/nginx/；一个匿名挂载，容器内路径为/usr/share/nginx/
 **具名挂载：**
-![](file:////Users/spadesclubs/Library/Containers/com.kingsoft.wpsoffice.mac/Data/tmp/wps-spadesclubs/ksohtml//wps1.jpg) 
+![未成功加载图片](云平台开发--Docker/image.png) 
 **匿名挂载：**
-![](file:////Users/spadesclubs/Library/Containers/com.kingsoft.wpsoffice.mac/Data/tmp/wps-spadesclubs/ksohtml//wps2.jpg)
+![未成功加载图片](云平台开发--Docker/image-1.png)
 3、**后台方式运行官方最新的mysql镜像，容器名字mysql-server，端口映射33306:3306，在宿主机上创建数据卷，将目录/home/data挂载到容器目录/var/lib/mysql，密码设置用-e MYSQL_ROOT_PASSWORD=123456** 
 `docker run -d --name mysql-server -p 33306:3306 -v ~/class/docker_class_xxxx/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql`
 启动后进入到容器里面运行命令mysql -u root -p**，输入密码后登录
-![[Pasted image 20251029173241.png]]
+![未成功加载图片](云平台开发--Docker/Pasted%20image%2020251029173241.png)
 
 #### 不进入容器也可以查看ip
 例如tomcat容器，`docker inspect registry`
@@ -126,12 +125,12 @@ docker pull localhost:5001/nginx:1.0
 
 #### docker虚拟网络
 --link原理 /etc/hosts文件添加ip和主机名对应
-![[Pasted image 20251105140027.png]]
+![未成功加载图片](云平台开发--Docker/Pasted%20image%2020251105140027.png)
 ##### 自定义网络
 `docker network create --driver bridge --subnet 192.16.0.0/24 --gateway 192.16.0.1 webnet`
 通过`docker network ls`查看
 新的网络webnet就是自己定义的
-![[Pasted image 20251105140853.png]]
+![未成功加载图片](云平台开发--Docker/Pasted%20image%2020251105140853.png)
 启动两个容器测试，使用自己创建的自定义网络的 webnet
 `docker run -d -P --name tomcat-net-01 --net webnet tomcat`
 `docker run -it --name=centos-net-02 --net webnet centos ping -c 3 tomcat-net-01`
