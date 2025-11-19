@@ -1,5 +1,7 @@
 ---
-cover: /images/autumn.webp.jpg
+cover: "/images/autumn.webp.jpg"
+menu_id: about
+title: 关于
 ---
 
 

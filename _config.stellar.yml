@@ -54,16 +54,16 @@ menubar:
       icon: solar:notebook-bookmark-bold-duotone
       title: 关于
       url: /about/
-    # - id: explore
-    #   theme: '#FA6400'
-    #   icon: solar:planet-bold-duotone
-    #   title: 探索
-    #   url: /explore/
-    # - id: social
-    #   theme: '#F44336'
-    #   icon: solar:chat-square-like-bold-duotone
-    #   title: 社交
-    #   url: /friends/
+    - id: record
+      theme: '#FA6400'
+      icon: solar:chat-square-like-bold-duotone
+      title: 收藏
+      url: /record/
+    - id: life
+      theme: '#F44336'
+      icon: solar:planet-bold-duotone
+      title: 生活
+      url: /life/
     # - id: github
     #   theme: '#181717'  
     #   icon: solar:github-fill
