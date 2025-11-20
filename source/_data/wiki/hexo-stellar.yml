@@ -1,11 +1,12 @@
 name: Clubs&Spades's Wiki
 title: Game & Reproduce - 间歇更新
 subtitle: 'As the clouds dissipate.| 温柔是黑暗世界里永恒的光'
+avatar: /images/clubsspades.jpg
 tags: Notes
-icon: https://res.xaox.cc/gh/cdn-x/wiki@main/stellar/icon.svg
-cover: https://res.xaox.cc/gh/cdn-x/wiki@main/stellar/icon.svg
+icon: /images/clubsspades.jpg
+cover: /images/clubsspades.jpg
 description: Clubs&Spades's Wiki - 施工中...
-repo: xaoxuu/hexo-theme-stellar
+repo: ClubsSpades/clubsspades.github.io
 search:
   filter: /wiki/stellar/
   placeholder: 在 Stellar 中搜索...
