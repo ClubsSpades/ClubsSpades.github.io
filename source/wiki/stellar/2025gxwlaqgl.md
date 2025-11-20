@@ -1,6 +1,6 @@
 ---
 wiki: hexo-stellar 
 title: 2025gxwlaqgl
-tag: [Study,Forensics]
+tags: [Study,Forensics]
 ---
 施工中...

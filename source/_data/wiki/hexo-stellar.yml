@@ -5,6 +5,7 @@ avatar: /images/clubsspades.jpg
 tags: Notes
 icon: /images/clubsspades.jpg
 cover: /images/clubsspades.jpg
+coverpage: true # 默认是 true
 description: Clubs&Spades's Wiki - 施工中...
 repo: ClubsSpades/clubsspades.github.io
 search:
@@ -18,13 +19,14 @@ comment_title: '评论区仅供交流。'
 comments:
   service: giscus
   giscus:
-    data-repo: xaoxuu/hexo-theme-stellar
+    data-repo: ClubsSpades/clubsspades.github.io
     data-mapping: number
     data-term: 226
 base_dir: /wiki/stellar/
 tree:
   'Notes':
     - picoctf
+    - steganography-1
   '比赛复现':
     - 2025szb
     - 2025gxwlaqgl

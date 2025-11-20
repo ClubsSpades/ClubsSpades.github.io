@@ -15,6 +15,9 @@ title: 关于
 | **博客写作** | 📚 间歇更新 | 📷 加载存档点 |
 | **碎片记录** | 🌸 追番喵 | 🎮 明日方舟 |
 
+{% link https://gchq.github.io/CyberChef/ cyberchef %}
+
+
 icons.yml 中的图标：{% icon solar:planet-bold-duotone %}
 外链图标：{% icon https://api.iconify.design/solar:link-circle-bold.svg %}
 指定颜色：{% icon ph:seal-question-fill color:red %}
