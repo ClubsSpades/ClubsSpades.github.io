@@ -1,6 +1,5 @@
 ---
 wiki: hexo-stellar 
-layout: wiki
 title: PicoCTF
 tag: [Study,CTF]
 ---
