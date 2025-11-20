@@ -1,0 +1,32 @@
+name: Clubs&Spades's Wiki
+title: Game & Reproduce - 间歇更新
+subtitle: 'As the clouds dissipate.| 温柔是黑暗世界里永恒的光'
+tags: Notes
+icon: https://res.xaox.cc/gh/cdn-x/wiki@main/stellar/icon.svg
+cover: https://res.xaox.cc/gh/cdn-x/wiki@main/stellar/icon.svg
+description: Clubs&Spades's Wiki - 施工中...
+repo: xaoxuu/hexo-theme-stellar
+search:
+  filter: /wiki/stellar/
+  placeholder: 在 Stellar 中搜索...
+leftbar: 
+  - tree
+  - timeline_stellar_releases
+  - related
+comment_title: '评论区仅供交流。'
+comments:
+  service: giscus
+  giscus:
+    data-repo: xaoxuu/hexo-theme-stellar
+    data-mapping: number
+    data-term: 226
+base_dir: /wiki/stellar/
+tree:
+  'Notes':
+    - picoctf
+  '比赛复现':
+    - 2025szb
+    - 2025gxwlaqgl
+  # 'MISC脚本':
+  #   - miscscripts
+

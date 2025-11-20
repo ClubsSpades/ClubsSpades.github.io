@@ -49,11 +49,11 @@ menubar:
       icon: solar:documents-bold-duotone
       title: 博客
       url: /
-    - id: about
+    - id: wiki
       theme: '#3DC550'
       icon: solar:notebook-bookmark-bold-duotone
-      title: 关于
-      url: /about/
+      title: Wiki
+      url: /wiki/
     - id: record
       theme: '#FA6400'
       icon: solar:chat-square-like-bold-duotone
