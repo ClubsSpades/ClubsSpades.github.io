@@ -1,8 +1,15 @@
 ---
 wiki: hexo-stellar 
 title: PicoCTF
-tag: [Study,CTF]
+data: 2024-11
+tags: [Study,CTF]
+excerpt: PicoCTF靶场学习记录
 ---
+
+<br>
+{% hashtag PicoCTF https://play.picoctf.org/practice %}
+<!---more---->
+
 ### git用法
 
 `git log`:查看上传日志
@@ -15,19 +22,19 @@ tag: [Study,CTF]
 
 `ln -s /root/flag.txt /home/player/banner`：访问 `/home/player/banner` 将会像访问 `/root/flag.txt` 一样
 
-#### 1. `ln`：
+1. `ln`：
 
 `ln` 是用于创建链接的命令。默认情况下，`ln` 创建硬链接，但加上 `-s` 选项后，它会创建一个符号链接。
 
-#### 2. `-s`：
+2. `-s`：
 
 `-s` 选项表示创建**符号链接**（symbolic link），也叫软链接（soft link）。符号链接类似于快捷方式，它指向另一个文件或目录。与硬链接不同，符号链接不会占用数据块，而是存储目标文件的路径。
 
-#### 3. `/root/flag.txt`：
+3. `/root/flag.txt`：
 
 这是符号链接的**目标文件**。在这个例子中，`/root/flag.txt` 是目标文件，也就是你希望指向的实际文件。该文件通常是存储 "flag" 的文件，在一些挑战中，flag 是需要找到的关键文件。
 
-#### 4. `/home/player/banner`：
+4. `/home/player/banner`：
 
 这是**符号链接的路径和名称**。`/home/player/banner` 是你希望创建的符号链接的路径和名称。通过这个符号链接，用户可以访问 `/root/flag.txt` 文件，而无需直接访问原文件路径。
 
@@ -37,13 +44,13 @@ tag: [Study,CTF]
 
 ### root权限shell
 
-#### `sudo -l`:查看当前用户可用权限，如需要从vim得到root，`sudo vi`然后`:!sh`进入root权限
+`sudo -l`:查看当前用户可用权限，如需要从vim得到root，`sudo vi`然后`:!sh`进入root权限
 
 ### 如何自动执行任务以在 Linux 服务器上间隔运行？
 
-#### `/etc/crontab`
+`/etc/crontab`
 
-### man命令，（如果直接加脚本名或许...
+### man命令
 
 通过 man 命令，您可以获取关于特定命令或主题的详细信息。
 
@@ -59,3 +66,14 @@ man [选项] [节号] 命令/主题
 - `-k`：搜索手册页中与关键字匹配的条目。
 - `-a`：显示所有匹配的手册页面。
 - `-w`：仅显示手册页的位置，而不显示其内容。
+
+### rockstar-py项目
+
+一种语言代码，从歌词txt转成py脚本，项目从github上clone。
+{% link https://github.com/yyyyyyyan/rockstar-py rockstar-py %}
+{% box %}
+rockstar-py --output rockstar.py -i lyrics.txt
+{% endbox %}
+
+> 形如txt,需要用rockstar-py转成py 
+{% link https://web.archive.org/web/20190522020843/https://codewithrockstar.com/online rockstar %}

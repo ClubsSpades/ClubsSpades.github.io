@@ -1,12 +1,12 @@
 name: Clubs&Spades's Wiki
 title: Game & Reproduce - 间歇更新
 subtitle: 'As the clouds dissipate.| 温柔是黑暗世界里永恒的光'
-avatar: /images/clubsspades.jpg
+# avatar: /images/clubsspades.jpg
 tags: Notes
 icon: /images/clubsspades.jpg
-cover: /images/clubsspades.jpg
+cover: /images/yjtp.png
 coverpage: true # 默认是 true
-description: Clubs&Spades's Wiki - 施工中...
+description: Clubs&Spades's Wiki - 施工中... <br> > 主要记录 CTF 题解、比赛复现、工具脚本等内容。<br> 更新不更旧,慢慢来吧 ^_^
 repo: ClubsSpades/clubsspades.github.io
 search:
   filter: /wiki/stellar/
